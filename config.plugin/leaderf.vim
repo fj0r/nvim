@@ -16,6 +16,9 @@ noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
 " --pcre2 for look-behind
 noremap <leader>fl :<C-U><C-R>=printf("Leaderf rg --pcre2 '(TODO\|FIXME\|NOTE)(?=:)'")<CR><CR>
+" asyncTasks
+noremap <leader>fq :Leaderf --nowrap task<CR>
+
 
 noremap g<C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 noremap g<C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
