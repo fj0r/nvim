@@ -53,6 +53,10 @@ command! -nargs=0  Q :qall
 noremap <leader>w :w<CR>
 command! -nargs=0  W :wall
 
+nnoremap <expr><silent><Esc>
+    \ len(filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"'))
+    \ ? ":ccl<CR>" : "\<Esc>"
+
 " 在Visual模式时，按Ctrl+c复制选择的内容
 vmap <C-c> "+y
 

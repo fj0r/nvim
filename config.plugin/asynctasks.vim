@@ -1,4 +1,5 @@
 let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
+let g:asyncrun_open = 6
 
 function! s:lf_task_source(...)
 	let rows = asynctasks#source(&columns * 48 / 100)
