@@ -29,6 +29,7 @@ noremap <M-l> <C-W><S-l>
 " move between tabs
 noremap <M-q> :tabprevious<CR>
 noremap <M-w> :tabnext<CR>
+noremap <leader>o :only<CR>
 
 " Go to home and end using capitalized directions
 noremap H ^
