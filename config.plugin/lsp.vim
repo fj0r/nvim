@@ -27,11 +27,14 @@ endfunction
 "let g:completion_enable_snippet = 'vim-vsnip'
 let g:completion_enable_snippet = 'UltiSnips'
 let g:completion_trigger_on_delete = 1
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
+"let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
+let g:completion_matching_strategy_list = ['exact', 'fuzzy']
 let g:completion_chain_complete_list = [
     \{'complete_items': ['lsp', 'snippet']},
+    \{'complete_items': ['path'], 'triggered_only': ['/']},
+    \{'complete_items': ['buffers']},
     \{'mode': '<c-p>'},
-    \{'mode': '<c-n>'}
+    \{'mode': '<c-n>'},
 \]
 
 " Code navigation shortcuts
