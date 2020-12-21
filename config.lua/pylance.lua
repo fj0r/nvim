@@ -5,7 +5,8 @@ local util = require'lspconfig/util'
 
 -- plug_path = 'nvim/config.lua'
 -- local _, _, plug_path = string.find(debug.getinfo(1, "S").source:sub(2),  "(.*/)pylance.lua")
-local ppath  = os.getenv('HOME') .. '/.vscode-server/extensions'
+-- local ppath  = os.getenv('HOME') .. '/.vscode-server/extensions'
+local ppath  = '/opt/language-server'
 local plug_path
 for i in io.popen('find '..ppath.." -name '*pylance*'"):lines() do
     plug_path = i
