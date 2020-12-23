@@ -9,6 +9,7 @@ call plug#begin(g:nvim_home . '/plugged')
 "Plug 'ompugao/vim-airline-datetime'
 Plug 'itchyny/lightline.vim'
 Plug 'niklaas/lightline-gitdiff'
+Plug 'sainnhe/gruvbox-material'
 
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'

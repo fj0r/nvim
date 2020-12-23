@@ -1,14 +1,13 @@
-set t_Co=256
-"set termguicolors
+set termguicolors
 
-set background=dark
-colorscheme kuroi
+let g:gruvbox_material_background = "hard"
+let g:gruvbox_material_sign_column_background = "none"
+"let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
 
-"set background=light
-"colorscheme solarized
 
-
-set cursorline " 突出显示当前行
+"set cursorline " 突出显示当前行
 "set cursorcolumn " 突出显示当前列
 "autocmd InsertLeave,WinEnter * set cursorcolumn
 "autocmd InsertEnter,WinLeave * set nocursorcolumn
