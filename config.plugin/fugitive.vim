@@ -16,5 +16,5 @@ cnoreabbrev gn   G checkout -b
 cnoreabbrev gm   G merge
 cnoreabbrev gr   Grebase
 
-nnoremap ,v  :<C-u>Gstatus<CR>
-nnoremap ,g  :<C-u>Glog<CR>
+nnoremap <Leader>s  :<C-u>Gstatus<CR>
+nnoremap <Leader>v  :<C-u>Glog<CR>

@@ -66,9 +66,9 @@ let g:lua_tree_icons = {
     \   }
     \ }
 
-nnoremap <silent><leader>ee :LuaTreeToggle<CR>
-nnoremap <silent><leader>er :LuaTreeRefresh<CR>
-nnoremap <silent><leader>ef :LuaTreeFindFile<CR>
+nnoremap <silent><leader>e :LuaTreeToggle<CR>
+nnoremap <silent><leader>xr :LuaTreeRefresh<CR>
+nnoremap <silent><leader>xf :LuaTreeFindFile<CR>
 " LuaTreeOpen and LuaTreeClose are also available if you need them
 
 set termguicolors " this variable must be enabled for colors to be applied properly
