@@ -66,12 +66,12 @@ let g:lua_tree_icons = {
     \   }
     \ }
 
-nnoremap <silent><leader>e :LuaTreeToggle<CR>
-nnoremap <silent><leader>xr :LuaTreeRefresh<CR>
-nnoremap <silent><leader>xf :LuaTreeFindFile<CR>
-" LuaTreeOpen and LuaTreeClose are also available if you need them
+nnoremap <silent><leader>e :NvimTreeToggle<CR>
+nnoremap <silent><leader>xr :NvimTreeRefresh<CR>
+nnoremap <silent><leader>xf :NvimTreeFindFile<CR>
+" NvimTreeOpen and NvimTreeClose are also available if you need them
 
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help lua_tree_highlight`
-highlight LuaTreeFolderIcon guibg=blue
+highlight NvimTreeFolderIcon guibg=blue
