@@ -14,14 +14,14 @@ if exists('*mkdir')
 endif
 
 set backup
-set backupdir   =$HOME/.vim.files/backup//
+set backupdir   =$HOME/.vim.files/backup/
 set backupext   =-vimbackup
 set backupskip  =
 
-set directory   =$HOME/.vim.files/swap//
+set directory   =$HOME/.vim.files/swap/
 set updatecount =100
 
 set undofile
-set undodir     =$HOME/.vim.files/undo//
+set undodir     =$HOME/.vim.files/undo/
 
 set viminfo     ='1000,n$HOME/.vim.files/info/viminfo
