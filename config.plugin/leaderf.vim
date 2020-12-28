@@ -1,4 +1,3 @@
-"let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
@@ -18,6 +17,13 @@ noremap <leader>fl :<C-U><C-R>=printf("Leaderf rg --pcre2 '(TODO\|FIXME\|NOTE)(?
 " asyncTasks
 noremap <leader>fq :Leaderf --nowrap task<CR>
 
+let g:Lf_CommandMap = {
+    \ '<C-x>': ['<C-s>'],
+    \ '<C-]>': ['<C-v>'],
+    \ '<C-T>': ['<C-t>'],
+    \ '<C-s>': ['<C-x>'],
+    \ '<C-v>': ['<C-]>'],
+    \ }
 
 noremap <leader>fs :Leaderf rg<CR>
 noremap go :<C-U>Leaderf rg --recall<CR>
