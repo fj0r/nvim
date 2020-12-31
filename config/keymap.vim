@@ -12,10 +12,10 @@ endif
 inoremap <C-e> <C-o>A
 
 " j k 在屏幕行间上下移动；gj gk 在物理行间上下移动
-noremap j gj
-noremap k gk
-noremap gj j
-noremap gk k
+"noremap j gj
+"noremap k gk
+"noremap gj j
+"noremap gk k
 
 " move between windows
 noremap <C-j> <C-W>j
