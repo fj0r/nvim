@@ -18,3 +18,6 @@ cnoreabbrev gr   Grebase
 
 nnoremap <Leader>s  :<C-u>Gstatus<CR>
 nnoremap <Leader>v  :<C-u>Glog<CR>
+
+command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
+
