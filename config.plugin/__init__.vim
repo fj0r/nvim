@@ -27,9 +27,9 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'tpope/vim-commentary'
 
 "Plug 'tpope/vim-surround'
+"Plug 'matze/vim-move'
 Plug 'wellle/targets.vim'
 Plug 'machakann/vim-sandwich'
-Plug 'matze/vim-move'
 Plug 'machakann/vim-swap'
 
 Plug 'SirVer/ultisnips'
