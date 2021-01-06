@@ -4,6 +4,8 @@
 " Make sure you use single quotes
 call plug#begin(g:nvim_home . '/plugged')
 
+Plug 'chr4/nginx.vim'
+
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'ompugao/vim-airline-datetime'
@@ -19,11 +21,16 @@ Plug 'skywind3000/vim-terminal-help'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
 Plug 'Chiel92/vim-autoformat'
 Plug 'mg979/vim-visual-multi'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'tpope/vim-commentary'
+
+"Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
+Plug 'machakann/vim-sandwich'
+Plug 'matze/vim-move'
+Plug 'machakann/vim-swap'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
