@@ -18,21 +18,21 @@ inoremap <C-e> <C-o>A
 "noremap gk k
 
 " move between windows
-noremap <C-j> <C-W>j
-noremap <C-k> <C-W>k
-noremap <C-h> <C-W>h
-noremap <C-l> <C-W>l
-noremap <M-j> <C-W><S-j>
-noremap <M-k> <C-W><S-k>
-noremap <M-h> <C-W><S-h>
-noremap <M-l> <C-W><S-l>
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+nnoremap <M-j> <C-W><S-j>
+nnoremap <M-k> <C-W><S-k>
+nnoremap <M-h> <C-W><S-h>
+nnoremap <M-l> <C-W><S-l>
 " move between tabs
-noremap <M-q> :tabprevious<CR>
-noremap <M-w> :tabnext<CR>
+nnoremap <M-q> :tabprevious<CR>
+nnoremap <M-w> :tabnext<CR>
 
 " Go to home and end using capitalized directions
-noremap H ^
-noremap L $
+nnoremap H ^
+nnoremap L $
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -40,15 +40,16 @@ cnoremap <M-f> <C-Right>
 cnoremap <M-b> <C-Left>
 
 " 去掉搜索高亮
-noremap <silent><leader>/ :nohls<CR>
+nnoremap <silent><leader>/ :nohls<CR>
 " NOTE:
-noremap <silent><leader>p :set paste!<CR>
+nnoremap <silent><leader>p :set paste!<CR>
 
+nnoremap M :marks<CR>
 " Quickly close the current window
-noremap <leader>q :q<CR>
+nnoremap <leader>q :q<CR>
 command! -nargs=0  Q :qall
 " Quickly save the current file
-noremap <leader>w :w<CR>
+nnoremap <leader>w :w<CR>
 command! -nargs=0  W :wall
 " reload file
 command! -nargs=0  E :e!
@@ -57,6 +58,5 @@ nnoremap <expr><silent><Esc>
     \ len(filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"'))
     \ ? ":ccl<CR>" : "\<Esc>"
 
-
 " 快速编辑自定义宏
-noremap <leader>m  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
+nnoremap <leader>m  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
