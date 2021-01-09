@@ -16,7 +16,6 @@ local user_cfg = {
     gopls = {},
     sqlls = {},
     vuels = {},
-    sumneko_lua = {},
     html = {},
     cssls = {},
     dockerls = {},
