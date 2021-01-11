@@ -1,5 +1,6 @@
 let g:nvim_home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let &rtp.=','.g:nvim_home
+let g:nvim_plugged = g:nvim_home . '/plugged'
 
 let g:nvim_preset = exists('$NVIM_PRESET') ? $NVIM_PRESET: 'core'
 let g:nvim_setup_plugins = exists('$NVIM_SETUP_PLUGINS')
@@ -22,9 +23,11 @@ else
     endfor
 
     "let &rtp.=','.g:nvim_home.'/config.lua'
-    for fpath in split(globpath(resolve(expand(g:nvim_home.'/config.lua')), '*.lua'), '\n')
-        exe 'luafile' fpath
-    endfor
+    if has('nvim-0.5')
+        for fpath in split(globpath(resolve(expand(g:nvim_home.'/config.lua')), '*.lua'), '\n')
+            exe 'luafile' fpath
+        endfor
+    endif
 endif
 
 " vim: set fdl=0 fdm=marker:

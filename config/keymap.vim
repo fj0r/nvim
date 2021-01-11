@@ -59,4 +59,4 @@ nnoremap <expr><silent><Esc>
     \ ? ":ccl<CR>" : "\<Esc>"
 
 " 快速编辑自定义宏
-nnoremap <leader>m  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
+nnoremap <leader>xm  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>

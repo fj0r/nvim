@@ -20,4 +20,7 @@ map  <Leader>j <Plug>(easymotion-bd-jk)
 map  <Leader>k <Plug>(easymotion-k)
 nma  <Leader>h <Plug>(easymotion-linebackward)
 
-
+if !empty(glob(g:nvim_plugged.'/coc.nvim'))
+    autocmd User EasyMotionPromptBegin silent! CocDisable
+    autocmd User EasyMotionPromptEnd silent! CocEnable
+endif

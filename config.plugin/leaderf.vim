@@ -1,3 +1,4 @@
+let g:Lf_ShowDevIcons = 0
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
@@ -5,17 +6,18 @@ let g:Lf_IgnoreCurrentBufferName = 1
 " popup mode
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
-let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+"let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
 let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
 
-let g:Lf_ShortcutF = "<leader>ff"
-noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
-noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
-noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
-" --pcre2 for look-behind
-noremap <leader>fl :<C-U><C-R>=printf("Leaderf rg --pcre2 '(TODO\|FIXME\|NOTE)(?=:)'")<CR><CR>
+let g:Lf_ShortcutF = "<leader>d"
+noremap <leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 " asyncTasks
-noremap <leader>fq :Leaderf --nowrap task<CR>
+noremap <leader>t :Leaderf --nowrap task<CR>
+" --pcre2 for look-behind
+noremap <leader>g :<C-U><C-R>=printf("Leaderf rg --pcre2 '(TODO\|FIXME\|NOTE)(?=:)'")<CR><CR>
+
+"noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
 
 let g:Lf_CommandMap = {
     \ '<C-x>': ['<C-s>'],
@@ -25,7 +27,7 @@ let g:Lf_CommandMap = {
     \ '<C-v>': ['<C-]>'],
     \ }
 
-noremap <leader>fs :Leaderf rg<CR>
+noremap <leader>r :Leaderf rg<CR>
 noremap go :<C-U>Leaderf rg --recall<CR>
 noremap g<C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 noremap g<C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>

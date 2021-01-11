@@ -35,7 +35,7 @@ set ignorecase " 搜索时忽略大小写，
 set smartcase "有一个或以上大写字母时仍保持对大小写敏感
 set incsearch " 输入搜索内容时就显示搜索结果
 
-set magic " 设置魔术
+set magic
 set autoread
 set wildignore+=.pyc,.swp
 
