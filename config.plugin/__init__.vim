@@ -2,7 +2,7 @@
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 " Make sure you use single quotes
-call plug#begin(g:nvim_home . '/plugged')
+call plug#begin(g:nvim_plugged)
 
 Plug 'chr4/nginx.vim'
 
@@ -27,10 +27,10 @@ Plug 'mg979/vim-visual-multi'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'tpope/vim-commentary'
 
-"Plug 'tpope/vim-surround'
 "Plug 'matze/vim-move'
 Plug 'wellle/targets.vim'
-Plug 'machakann/vim-sandwich'
+Plug 'tpope/vim-surround'
+"Plug 'machakann/vim-sandwich'
 Plug 'machakann/vim-swap'
 
 Plug 'SirVer/ultisnips'
