@@ -1,5 +1,3 @@
-Plug 'mhinz/vim-startify'
-
 function! s:gitModified()
     let files = systemlist('git ls-files -m 2>/dev/null')
     return map(files, "{'line': v:val, 'path': v:val}")

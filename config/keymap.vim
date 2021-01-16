@@ -26,9 +26,20 @@ nnoremap <M-j> <C-W><S-j>
 nnoremap <M-k> <C-W><S-k>
 nnoremap <M-h> <C-W><S-h>
 nnoremap <M-l> <C-W><S-l>
+
 " move between tabs
-nnoremap <M-q> :tabprevious<CR>
-nnoremap <M-w> :tabnext<CR>
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+
+cnoreabbrev t tabnew
 
 " Go to home and end using capitalized directions
 nnoremap H ^
@@ -47,7 +58,6 @@ nnoremap <silent><leader>p :set paste!<CR>
 nnoremap M :marks<CR>
 " Quickly close the current window
 nnoremap <leader>q :q<CR>
-command! -nargs=0  Q :qall
 " Quickly save the current file
 nnoremap <leader>w :w<CR>
 command! -nargs=0  W :wall

@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'niklaas/lightline-gitdiff'
 Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
+Plug 't9md/vim-choosewin'
 
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'

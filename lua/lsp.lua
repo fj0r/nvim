@@ -1,7 +1,7 @@
 local M = {}
 local lspconfig = require'lspconfig'
-local lsp_status = require'lsp-status'
-lsp_status.register_progress()
+-- local lsp_status = require'lsp-status'
+-- lsp_status.register_progress()
 
 function on_attach(client)
     -- require'completion'.on_attach(client)
@@ -18,7 +18,6 @@ function M.setup(cfg)
     for k, v in pairs(cfg) do default[k] = v end
     lspconfig[cfg.name].setup(default)
 end
-
 
 return M
 
