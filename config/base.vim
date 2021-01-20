@@ -23,7 +23,7 @@ set scrolloff=1 " The number of screen lines to keep above and below the cursor.
 set sidescrolloff=5 " The number of screen columns to keep to the left and right of the cursor.
 set wrap " Enable line wrapping.
 
-set ambiwidth=double " 设置为双字宽显示，否则无法完整显示如:☆
+"set ambiwidth=double " 设置为双字宽显示，否则无法完整显示如:☆
 set backspace=2 " 解决 backspace 按键删除的问题 http://cenalulu.github.io/linux/why-my-backspace-not-work-in-vim/
 "set backspace=indent,eol,start
 set encoding=utf-8
