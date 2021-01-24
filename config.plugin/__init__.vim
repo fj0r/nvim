@@ -19,11 +19,14 @@ Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/vim-terminal-help'
 
+"Plug 't9md/vim-smalls'
+Plug 'justinmk/vim-sneak'
+"Plug 'easymotion/vim-easymotion'
+Plug 'mg979/vim-visual-multi'
+
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
-Plug 'easymotion/vim-easymotion'
 Plug 'Chiel92/vim-autoformat'
-Plug 'mg979/vim-visual-multi'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'tpope/vim-commentary'
 

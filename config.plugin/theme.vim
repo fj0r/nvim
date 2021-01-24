@@ -1,5 +1,8 @@
 set termguicolors
 
+"material mix original
+let g:gruvbox_material_palette = "material"
+"hard medium soft
 let g:gruvbox_material_background = "hard"
 let g:gruvbox_material_sign_column_background = "none"
 let g:gruvbox_material_transparent_background = 1
@@ -8,8 +11,9 @@ colorscheme gruvbox-material
 
 hi Visual guibg=#003333
 
-set cursorline " 突出显示当前行
+"set cursorline " 突出显示当前行
 "set cursorcolumn " 突出显示当前列
+set guicursor+=a:blinkon0
 "autocmd InsertLeave,WinEnter * set cursorcolumn
 "autocmd InsertEnter,WinLeave * set nocursorcolumn
 
