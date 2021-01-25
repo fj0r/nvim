@@ -72,3 +72,5 @@ nnoremap <expr><silent><Esc>
 
 " 快速编辑自定义宏
 nnoremap <leader>xm  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
+
+nnoremap <silent><leader>n :set relativenumber! \| :set number!<CR>
