@@ -21,13 +21,13 @@ if &ambiwidth != 'single'
     sign define vimspectorBPDisabled text=!> texthl=LineNr
     sign define vimspectorPC text=->         texthl=MatchParen
     sign define vimspectorPCBP text=->       texthl=MatchParen
-
 endif
 
 let g:vimspector_sign_priority = {
-  \    'vimspectorBP':         3,
-  \    'vimspectorBPCond':     2,
-  \    'vimspectorBPDisabled': 1,
+  \    'vimspectorBP':         999,
+  \    'vimspectorBPCond':     999,
+  \    'vimspectorBPDisabled': 999,
   \    'vimspectorPC':         999,
+  \    'vimspectorPCBP':       999,
   \ }
 

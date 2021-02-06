@@ -11,12 +11,11 @@ colorscheme gruvbox-material
 
 hi Visual guibg=#003333
 
-"set cursorline " 突出显示当前行
-"set cursorcolumn " 突出显示当前列
 set guicursor+=a:blinkon0
-"autocmd InsertLeave,WinEnter * set cursorcolumn
-"autocmd InsertEnter,WinLeave * set nocursorcolumn
-
+"set cursorline
+"set cursorcolumn
+autocmd InsertLeave,WinEnter * set cursorline
+autocmd InsertEnter,WinLeave * set nocursorline
 
 set lazyredraw "Don’t update screen during macro and script execution.
 

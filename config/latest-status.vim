@@ -1,5 +1,7 @@
 " 记忆最后编辑状态
-autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+if empty(glob(g:nvim_plugged.'/vim-workspace'))
+	autocmd BufReadPost *
+	    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+	    \   exe "normal! g`\"" |
+	    \ endif
+endif

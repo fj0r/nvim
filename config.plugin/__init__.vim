@@ -2,9 +2,11 @@
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 " Make sure you use single quotes
+"
 call plug#begin(g:nvim_plugged)
 
 Plug 'chr4/nginx.vim'
+Plug 'keith/swift.vim'
 
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
@@ -18,6 +20,7 @@ Plug 't9md/vim-choosewin'
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/vim-terminal-help'
+"Plug 'kassio/neoterm'
 
 "Plug 't9md/vim-smalls'
 Plug 'justinmk/vim-sneak'
@@ -32,8 +35,8 @@ Plug 'tpope/vim-commentary'
 
 "Plug 'matze/vim-move'
 Plug 'wellle/targets.vim'
-Plug 'tpope/vim-surround'
 "Plug 'machakann/vim-sandwich'
+Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 
 Plug 'SirVer/ultisnips'
@@ -41,30 +44,24 @@ Plug 'honza/vim-snippets'
 "Plug 'hrsh7th/vim-vsnip'
 "Plug 'hrsh7th/vim-vsnip-integ'
 
-"Plug 'preservim/nerdtree'
-Plug 'kyazdani42/nvim-tree.lua'
-"if has('nvim')
-"  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/defx.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-
-
 Plug 'tpope/vim-fugitive'
+"Plug 'mbbill/undotree'
+Plug 'simnalamburt/vim-mundo'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
 Plug 'thaerkh/vim-workspace'
 
-if g:nvim_preset == 'core'
-  Plug 'Yggdroot/LeaderF'
-else
+if executable('gcc')
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension'  }
+else
+  Plug 'Yggdroot/LeaderF'
 endif
 
 Plug 'puremourning/vimspector'
 
+Plug 'johngrib/vim-game-snake'
+
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'rafcamlet/nvim-luapad'
 Plug 'neovim/nvim-lspconfig'
@@ -72,7 +69,6 @@ Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'nvim-lua/completion-nvim'
 
-Plug 'johngrib/vim-game-snake'
 
 call plug#end()
 

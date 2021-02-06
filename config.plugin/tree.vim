@@ -13,7 +13,7 @@ let g:lua_tree_tab_open = 1 "0 by default, will open the tree when entering a ne
 let g:lua_tree_allow_resize = 1 "0 by default, will not resize the tree when opening a file
 let g:lua_tree_show_icons = {
     \ 'git': 1,
-    \ 'folders': 0,
+    \ 'folders': 1,
     \ 'files': 0,
     \ }
 "If 0, do not show the icons for one of 'git' 'folder' and 'files'
@@ -26,7 +26,7 @@ let g:lua_tree_show_icons = {
 let g:lua_tree_bindings = {
     \ 'edit':            ['<CR>', 'o'],
     \ 'edit_vsplit':     '<C-v>',
-    \ 'edit_split':      '<C-h>',
+    \ 'edit_split':      '<C-s>',
     \ 'edit_tab':        '<C-t>',
     \ 'close_node':      ['<S-CR>', '<BS>'],
     \ 'toggle_ignored':  'I',
@@ -51,18 +51,19 @@ let g:lua_tree_bindings = {
 " default will show icon by default if no icon is provided
 " default shows no icon by default
 let g:lua_tree_icons = {
-    \ 'default': '',
+    \ 'default': '|',
     \ 'symlink': '@',
     \ 'git': {
-    \   'unstaged': "✗",
-    \   'staged': "✓",
+    \   'unstaged': "*",
+    \   'staged': "=",
     \   'unmerged': "~",
-    \   'renamed': "➜",
-    \   'untracked': "★"
+    \   'renamed': "^",
+    \   'untracked': "!"
     \   },
     \ 'folder': {
     \   'default': "+",
-    \   'open': "-"
+    \   'open': "-",
+	\   'symlink': "@"
     \   }
     \ }
 
@@ -74,4 +75,4 @@ nnoremap <silent><leader>xf :NvimTreeFindFile<CR>
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help lua_tree_highlight`
-highlight NvimTreeFolderIcon guibg=blue
+"highlight NvimTreeFolderIcon guibg=blue

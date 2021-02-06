@@ -1,0 +1,2 @@
+tnoremap <C-q> <c-\><c-n>
+let g:terminal_key = '<c-t>'

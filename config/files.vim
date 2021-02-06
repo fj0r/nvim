@@ -18,7 +18,7 @@ set backupdir   =$HOME/.vim.files/backup/
 set backupext   =-vimbackup
 set backupskip  =
 
-set directory   =$HOME/.vim.files/swap/
+set directory   =$HOME/.vim.files/swap//
 set updatecount =100
 
 set undofile

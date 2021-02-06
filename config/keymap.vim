@@ -47,6 +47,10 @@ cnoreabbrev t tabnew
 nnoremap H ^
 nnoremap L $
 
+" visual selection excluding newline & space
+xnoremap H ^
+xnoremap L g_
+
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <M-f> <C-Right>
@@ -72,5 +76,9 @@ nnoremap <expr><silent><Esc>
 
 " 快速编辑自定义宏
 nnoremap <leader>xm  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
+
+" 防止水平滑动的时候失去选择
+xnoremap < <gv
+xnoremap > >gv
 
 nnoremap <silent><leader>n :set relativenumber! \| :set number!<CR>
