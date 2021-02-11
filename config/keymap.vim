@@ -26,8 +26,8 @@ nnoremap <M-j> <C-W><S-j>
 nnoremap <M-k> <C-W><S-k>
 nnoremap <M-h> <C-W><S-h>
 nnoremap <M-l> <C-W><S-l>
-cnoreabbrev vr vertical resize
-cnoreabbrev hr resize
+command! -nargs=1 VR :vertical resize <args>
+command! -nargs=1 HR :resize <args>
 
 " move between tabs
 noremap <leader>1 1gt
@@ -41,7 +41,7 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
-cnoreabbrev t tabnew
+command! -complete=file -nargs=1 T :tabnew <args>
 
 " Go to home and end using capitalized directions
 nnoremap H ^

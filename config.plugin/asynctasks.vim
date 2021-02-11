@@ -111,3 +111,6 @@ let g:asynctasks_template.npm= [
             \ "cwd=<root>",
             \ "output=terminal",
             \ ]
+
+command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
+

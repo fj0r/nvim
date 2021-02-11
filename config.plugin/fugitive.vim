@@ -1,23 +1,21 @@
-cnoreabbrev gca  Gcommit
-cnoreabbrev gcaa Gcommit --amend
+command! Gca  Gcommit
+command! Gcaa Gcommit --amend
 
-cnoreabbrev gps  Gpush
-cnoreabbrev gpsf Gpush -f
-cnoreabbrev gpl  Gpull
+command! Gps  Gpush
+command! Gpsf Gpush -f
+command! Gpl  Gpull
 
-cnoreabbrev gs   Gstatus
-cnoreabbrev gl   Glog
-cnoreabbrev gd   Gdiffsplit
-cnoreabbrev gb   Gblame
+command! Gs   Gstatus
+command! Gl   Glog
+command! Gd   Gdiffsplit
+command! Gb   Gblame
 
-cnoreabbrev gc   G checkout
-cnoreabbrev gn   G checkout -b
+command! Gc   G checkout
+command! Gn   G checkout -b
 
-cnoreabbrev gm   G merge
-cnoreabbrev gr   Grebase
+command! Gm   G merge
+command! Gr   Grebase
 
 nnoremap <Leader>s  :<C-u>Gstatus<CR>
 nnoremap <Leader>v  :<C-u>Glog<CR>
-
-command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
 
