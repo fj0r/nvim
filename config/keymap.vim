@@ -42,7 +42,7 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
-command! -complete=file -nargs=1 T :tabnew <args>
+command! -complete=file -nargs=? T :tabnew <args>
 
 " Go to home and end using capitalized directions
 nnoremap H ^
