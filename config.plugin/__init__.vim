@@ -13,7 +13,7 @@ Plug 'keith/swift.vim'
 "Plug 'ompugao/vim-airline-datetime'
 Plug 'itchyny/lightline.vim'
 Plug 'niklaas/lightline-gitdiff'
-Plug 'mhinz/vim-startify'
+"Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 Plug 't9md/vim-choosewin'
 
