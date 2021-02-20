@@ -1,21 +1,17 @@
-command! Gca  Gcommit
-command! Gcaa Gcommit --amend
+command!                                                                Gca  Git commit
+command!                                                                Gcaa Git commit --amend
 
-command! Gps  Gpush
-command! Gpsf Gpush -f
-command! Gpl  Gpull
+command! -complete=customlist,fugitive#PushComplete                     Gps  Git push
+command! -complete=customlist,fugitive#PushComplete                     Gpsf Git push -f
+command! -complete=customlist,fugitive#PullComplete                     Gpl  Git pull
+command! -complete=customlist,fugitive#FetchComplete                    Gf   Git fetch
 
-command! Gs   Gstatus
-command! Gl   Glog
-command! Gd   Gdiffsplit
-command! Gb   Gblame
+command! -bar -bang -nargs=* -complete=customlist,fugitive#EditComplete Gd   Gvdiffsplit <f-args>
+command! -complete=customlist,fugitive#BlameComplete                    Gb   Git blame
 
-command! Gc   G checkout
-command! Gn   G checkout -b
+command! -complete=customlist,fugitive#ReadComplete -nargs=1            Gc   Git checkout <args>
+command! -nargs=1                                                       Gn   Git checkout -b <args>
 
-command! Gm   G merge
-command! Gr   Grebase
-
-nnoremap <Leader>s  :<C-u>Gstatus<CR>
-nnoremap <Leader>v  :<C-u>Glog<CR>
+nnoremap <Leader>s                                                      :<C-u>Gstatus<CR>
+nnoremap <Leader>v                                                      :<C-u>Glog<CR>
 
