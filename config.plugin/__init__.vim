@@ -6,7 +6,7 @@
 call plug#begin(g:nvim_plugged)
 
 Plug 'chr4/nginx.vim'
-Plug 'keith/swift.vim'
+"Plug 'keith/swift.vim'
 
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
@@ -47,8 +47,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 "Plug 'mbbill/undotree'
 Plug 'simnalamburt/vim-mundo'
-Plug 'jceb/vim-orgmode'
-Plug 'tpope/vim-speeddating'
+"Plug 'jceb/vim-orgmode'
+"Plug 'tpope/vim-speeddating'
 Plug 'thaerkh/vim-workspace'
 
 if executable('gcc')
@@ -59,7 +59,7 @@ endif
 
 Plug 'puremourning/vimspector'
 
-Plug 'johngrib/vim-game-snake'
+"Plug 'johngrib/vim-game-snake'
 
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
