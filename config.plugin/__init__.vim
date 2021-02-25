@@ -24,6 +24,7 @@ Plug 'skywind3000/vim-terminal-help'
 
 "Plug 't9md/vim-smalls'
 Plug 'justinmk/vim-sneak'
+Plug 'chaoren/vim-wordmotion'
 "Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
 
