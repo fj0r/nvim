@@ -2,7 +2,7 @@
 let g:mapleader=" "
 
 " 插入模式下 jk/kj 映射为 ESC，两次按键间隔不能超过 150毫秒
-if !$VIM_N_DUAL_ESC
+if $VIM_DUAL_ESC
   "inoremap jk <ESC>
   inoremap kj <ESC>
   autocmd InsertEnter * set timeoutlen=150
