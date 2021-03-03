@@ -31,7 +31,7 @@ noremap <leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 " asyncTasks
 noremap <leader>t :Leaderf --nowrap task<CR>
 " --pcre2 for look-behind
-noremap <leader>g :<C-U><C-R>=printf("Leaderf rg --wd-mode=Ac --pcre2 '(TODO\|FIXME\|NOTE)(?=:)'")<CR><CR>
+noremap <leader>g :<C-U><C-R>=printf("Leaderf rg --wd-mode=Ac --pcre2 '(NOTE\|OPTIMIZE\|TODO\|HACK\|XXX\|FIXME\|BUG)(?=:)'")<CR><CR>
 
 "noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
 noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
