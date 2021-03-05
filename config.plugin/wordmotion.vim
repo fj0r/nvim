@@ -1,2 +1,2 @@
-let g:wordmotion_uppercase_spaces = ['-', '{', '}', '(', ')']
+let g:wordmotion_uppercase_spaces = ['/', '{', '}', '(', ')']
 
