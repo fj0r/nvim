@@ -8,13 +8,14 @@ call plug#begin(g:nvim_plugged)
 Plug 'chr4/nginx.vim'
 "Plug 'keith/swift.vim'
 
+Plug 'sainnhe/gruvbox-material'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Plug 'ompugao/vim-airline-datetime'
 "Plug 'itchyny/lightline.vim'
 "Plug 'niklaas/lightline-gitdiff'
 "Plug 'mhinz/vim-startify'
-Plug 'sainnhe/gruvbox-material'
 Plug 't9md/vim-choosewin'
 
 Plug 'skywind3000/asynctasks.vim'
