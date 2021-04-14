@@ -5,6 +5,7 @@
 "
 call plug#begin(g:nvim_plugged)
 
+Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
 "Plug 'keith/swift.vim'
 

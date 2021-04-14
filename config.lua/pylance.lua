@@ -1,8 +1,6 @@
--- local lspconfig = require'lspconfig'
+local lspconfig = require'lspconfig'
 local configs = require'lspconfig/configs'
 local util = require'lspconfig/util'
-local I = require 'lsp'
-
 
 -- plug_path = 'nvim/config.lua'
 -- local _, _, plug_path = string.find(debug.getinfo(1, "S").source:sub(2),  "(.*/)pylance.lua")
@@ -35,6 +33,5 @@ if plug_path then
         }
     }
 
-    -- lspconfig.pylance.setup{}
-    I.setup { name = 'pylance' }
+    lspconfig.pylance.setup{}
 end

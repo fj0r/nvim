@@ -23,10 +23,10 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
-nnoremap <M-j> <C-W><S-j>
-nnoremap <M-k> <C-W><S-k>
-nnoremap <M-h> <C-W><S-h>
-nnoremap <M-l> <C-W><S-l>
+nnoremap <C-W><C-j> <C-W><S-j>
+nnoremap <C-W><C-k> <C-W><S-k>
+nnoremap <C-W><C-h> <C-W><S-h>
+nnoremap <C-W><C-l> <C-W><S-l>
 command! -nargs=1 VR :vertical resize <args>
 command! -nargs=1 HR :resize <args>
 
