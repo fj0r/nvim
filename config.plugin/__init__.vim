@@ -71,6 +71,7 @@ endif
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
+"
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
