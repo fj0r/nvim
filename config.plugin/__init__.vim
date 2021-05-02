@@ -52,7 +52,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'simnalamburt/vim-mundo'
 "Plug 'jceb/vim-orgmode'
 "Plug 'tpope/vim-speeddating'
-Plug 'thaerkh/vim-workspace'
 
 if executable('gcc')
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension'  }
@@ -61,14 +60,15 @@ else
 endif
 
 if g:nvim_preset != 'core'
+  Plug 'thaerkh/vim-workspace'
   Plug 'puremourning/vimspector'
+  Plug 'rafcamlet/nvim-luapad'
 endif
 
 "Plug 'johngrib/vim-game-snake'
 
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'rafcamlet/nvim-luapad'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
