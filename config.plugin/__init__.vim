@@ -42,10 +42,11 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-"Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/vim-vsnip'
 "Plug 'hrsh7th/vim-vsnip-integ'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-fugitive'
 "Plug 'mbbill/undotree'
@@ -69,11 +70,10 @@ endif
 
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
-Plug 'nvim-lua/completion-nvim'
 
 
 call plug#end()
