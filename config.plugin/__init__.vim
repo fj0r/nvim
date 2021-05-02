@@ -67,6 +67,7 @@ endif
 
 "Plug 'johngrib/vim-game-snake'
 
+"Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'neovim/nvim-lspconfig'
