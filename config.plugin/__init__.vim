@@ -60,7 +60,9 @@ else
   Plug 'Yggdroot/LeaderF'
 endif
 
-Plug 'puremourning/vimspector'
+if g:nvim_preset != 'core'
+  Plug 'puremourning/vimspector'
+endif
 
 "Plug 'johngrib/vim-game-snake'
 
