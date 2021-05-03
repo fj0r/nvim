@@ -9,3 +9,4 @@ for _, lsp in ipairs(servers) do
       capabilities = lspconf_capabilities,
   }
 end
+

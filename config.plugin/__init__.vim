@@ -40,11 +40,10 @@ Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 
 Plug 'hrsh7th/nvim-compe'
-Plug 'norcalli/snippets.nvim'
-"Plug 'hrsh7th/vim-vsnip'
+"Plug 'norcalli/snippets.nvim'
+Plug 'hrsh7th/vim-vsnip'
 "Plug 'hrsh7th/vim-vsnip-integ'
 "Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-fugitive'
 "Plug 'mbbill/undotree'
