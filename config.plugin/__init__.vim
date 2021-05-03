@@ -5,9 +5,6 @@
 "
 call plug#begin(g:nvim_plugged)
 
-Plug 'nanotee/sqls.nvim'
-Plug 'chr4/nginx.vim'
-"Plug 'keith/swift.vim'
 
 Plug 'sainnhe/gruvbox-material'
 
@@ -43,7 +40,8 @@ Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 
 Plug 'hrsh7th/nvim-compe'
-Plug 'hrsh7th/vim-vsnip'
+Plug 'norcalli/snippets.nvim'
+"Plug 'hrsh7th/vim-vsnip'
 "Plug 'hrsh7th/vim-vsnip-integ'
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
@@ -66,11 +64,16 @@ if g:nvim_preset != 'core'
   Plug 'rafcamlet/nvim-luapad'
 endif
 
+Plug 'nanotee/sqls.nvim'
+Plug 'chr4/nginx.vim'
+"Plug 'keith/swift.vim'
+
 "Plug 'johngrib/vim-game-snake'
 
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
 "
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/lsp-status.nvim'
