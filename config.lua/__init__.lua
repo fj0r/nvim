@@ -1,3 +1,2 @@
 require 'utils'
-require 'lsp'
 

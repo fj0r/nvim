@@ -13,8 +13,6 @@ end
 local sumneko_root_path = "/opt/language-server/sumneko_lua"
 require"lspconfig".sumneko_lua.setup {
   cmd = { sumneko_root_path .. "/bin/"..system_name.."/lua-language-server", "-E", sumneko_root_path .. "/main.lua"};
-  on_attach = lspconf_on_attach ,
-  capabilities = lspconf_capabilities;
   settings = {
       Lua = {
           runtime = {
