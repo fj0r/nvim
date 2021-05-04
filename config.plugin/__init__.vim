@@ -72,7 +72,7 @@ Plug 'chr4/nginx.vim'
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
-"Plug 'kabouzeid/nvim-lspinstall'
+Plug 'kabouzeid/nvim-lspinstall'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/lsp-status.nvim'
