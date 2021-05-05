@@ -1,4 +1,4 @@
-if g.nvim_preset ~= 'core' then
+if vim.g.nvim_preset ~= 'core' then
     local ls = { 'bash', 'cpp', 'css', 'go', 'gomod', 'graphql'
                , 'html', 'java', 'javascript', 'jsdoc', 'json', 'jsonc', 'julia'
                , 'lua', 'php', 'python', 'regex', 'rust'

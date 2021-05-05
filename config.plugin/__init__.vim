@@ -56,15 +56,17 @@ Plug 'simnalamburt/vim-mundo'
 "Plug 'jceb/vim-orgmode'
 "Plug 'tpope/vim-speeddating'
 
-if executable('gcc')
-  Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension'  }
-else
-  Plug 'Yggdroot/LeaderF'
-endif
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+"if executable('gcc')
+"  Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension'  }
+"else
+"  Plug 'Yggdroot/LeaderF'
+"endif
 
 if g:nvim_preset != 'core'
   Plug 'rafcamlet/nvim-luapad'
-  Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
 
