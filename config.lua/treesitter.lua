@@ -5,6 +5,10 @@ if g.nvim_preset ~= 'core' then
                , 'toml', 'tsx', 'typescript', 'vue', 'yaml'
                }
     local ts = require 'nvim-treesitter.configs'
-    ts.setup {ensure_installed = ls, highlight = {enable = true}}
+    ts.setup { ensure_installed = ls
+             , highlight = { enable = true
+                           , use_languagetree = true
+                           }
+             }
 end
 

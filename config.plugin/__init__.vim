@@ -6,14 +6,19 @@
 call plug#begin(g:nvim_plugged)
 
 
-Plug 'sainnhe/gruvbox-material'
+"Plug 'sainnhe/gruvbox-material'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'norcalli/nvim.lua'
+Plug 'norcalli/nvim-base16.lua'
+
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 "Plug 'ompugao/vim-airline-datetime'
 "Plug 'itchyny/lightline.vim'
 "Plug 'niklaas/lightline-gitdiff'
 "Plug 'mhinz/vim-startify'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 't9md/vim-choosewin'
 
 Plug 'skywind3000/asynctasks.vim'
@@ -71,7 +76,6 @@ Plug 'ojroques/vim-oscyank'
 
 "Plug 'johngrib/vim-game-snake'
 
-"Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
 "Plug 'kabouzeid/nvim-lspinstall'
