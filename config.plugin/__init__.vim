@@ -62,9 +62,6 @@ if g:nvim_preset != 'core'
   Plug 'nvim-lua/plenary.nvim'
 endif
 
-Plug 'thaerkh/vim-workspace'
-Plug 'puremourning/vimspector'
-
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
 "Plug 'keith/swift.vim'
@@ -74,10 +71,13 @@ Plug 'chr4/nginx.vim'
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
-Plug 'kabouzeid/nvim-lspinstall'
+"Plug 'kabouzeid/nvim-lspinstall'
+Plug 'thaerkh/vim-workspace'
+Plug 'puremourning/vimspector'
+
 
 Plug 'nvim-lua/lsp-status.nvim'
-Plug 'nvim-lua/lsp_extensions.nvim'
+"Plug 'nvim-lua/lsp_extensions.nvim'
 
 
 call plug#end()
