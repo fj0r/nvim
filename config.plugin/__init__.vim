@@ -60,6 +60,7 @@ endif
 if g:nvim_preset != 'core'
   Plug 'rafcamlet/nvim-luapad'
   Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
 
 Plug 'nanotee/sqls.nvim'
