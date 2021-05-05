@@ -58,10 +58,12 @@ else
 endif
 
 if g:nvim_preset != 'core'
-  Plug 'thaerkh/vim-workspace'
-  Plug 'puremourning/vimspector'
   Plug 'rafcamlet/nvim-luapad'
+  Plug 'nvim-lua/plenary.nvim'
 endif
+
+Plug 'thaerkh/vim-workspace'
+Plug 'puremourning/vimspector'
 
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
@@ -74,7 +76,6 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
 
