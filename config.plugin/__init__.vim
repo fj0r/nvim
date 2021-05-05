@@ -65,6 +65,8 @@ endif
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
 "Plug 'keith/swift.vim'
+Plug 'ojroques/vim-oscyank'
+
 
 "Plug 'johngrib/vim-game-snake'
 
