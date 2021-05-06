@@ -165,6 +165,7 @@ gls.right = {
         FileType = {
             provider = function()
                 if not buffer_not_empty() then return '' end
+                if vim.bo.filetype == '' then return '' end
                 return string.format(' %s ', vim.bo.filetype)
             end,
             condition = buffer_not_empty,

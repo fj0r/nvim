@@ -4,14 +4,12 @@ local nvim = require 'nvim'
 local themes = {
     'atelier-sulphurpool',
     'atlas',
-    'black-metal-bathory',
     'black-metal-gorgoroth',
     'classic-dark',
     'default-dark',
     'gruvbox-dark-hard',
     'gruvbox-light-medium',
     'horizon-dark',
-    'mexico-light',
     'mocha',
 }
 
