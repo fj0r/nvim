@@ -12,6 +12,7 @@ function M.from_base16(name)
         visual = 0x0A,
         command = 0x09,
         terminal = 0x0C,
+        gradient = 0x03,
         lsp_active = 0x0B,
         lsp_inactive = 0x08,
     }

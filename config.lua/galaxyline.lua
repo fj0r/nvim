@@ -1,10 +1,10 @@
-local nvim = require 'nvim'
 local gl = require 'galaxyline'
 local fileinfo = require 'galaxyline.provider_fileinfo'
 local vcs = require'galaxyline.provider_vcs'
 local lspclient = require('galaxyline.provider_lsp')
+local condition = require('galaxyline.condition')
 local utils = require 'utils'
-local cl = require 'colors'.from_base16(nvim.env.BASE16_THEME or "gruvbox-dark-hard")
+local cl = require 'colors'.from_base16(_G.BASE16_THEME)
 
 local gls = gl.section
 local u = utils.u
@@ -37,13 +37,13 @@ local sep = {
 }
 
 local icons = {
-    locker = u 'f023',
-    unsaved = u 'f693',
+    locker = '',
+    unsaved = '●',
     dos = u 'e70f',
     unix = u 'f17c',
     mac = u 'f179',
-    lsp_warn = u 'f071',
-    lsp_error = u 'f46e',
+    lsp_warn = 'W',
+    lsp_error = 'E',
 }
 
 local function mode_label() return mode_map[vim.fn.mode()][1] or 'N/A' end
@@ -79,10 +79,12 @@ gls.left = {
                 local modehl = mode_hl()
                 highlight('GalaxyViMode', cl.bg, modehl, 'bold')
                 highlight('GalaxyViModeInv', modehl, cl.bg, 'bold')
+                highlight('GalaxyViModeMid', cl.gradient, cl.bg, 'bold')
+                highlight('GalaxyViModeMidInv', modehl, cl.gradient, 'bold')
                 return string.format('  %s ', mode_label())
             end,
             separator = sep.left_filled,
-            separator_highlight = 'GalaxyViModeInv',
+            separator_highlight = 'GalaxyViModeMidInv',
         },
     }, {
         GitBranch = {
@@ -90,9 +92,10 @@ gls.left = {
                 local branch = vcs.get_git_branch()
                 return branch and "  " .. vcs.get_git_branch() .. " " or ""
             end,
-            separator = sep.left,
-            highlight = 'GalaxyViModeInv',
-            separator_highlight= 'GalaxyViModeInv',
+            separator = sep.left_filled,
+            condition = condition.hide_in_width,
+            highlight = 'GalaxyViModeMidInv',
+            separator_highlight = 'GalaxyViModeMid',
         },
     }, {
         FileName = {
@@ -115,9 +118,14 @@ gls.left = {
             end,
             highlight = {cl.fg, cl.bg},
             separator = sep.left,
+            condition = condition.hide_in_width,
             separator_highlight = 'GalaxyViModeInv',
         },
     },
+}
+
+gls.mid = {
+
 }
 
 gls.right = {
@@ -125,7 +133,7 @@ gls.right = {
         LspStatus = {
             provider = function()
                 local connected =
-                  not vim.tbl_isempty(vim.lsp.buf_get_clients(0))
+                not vim.tbl_isempty(vim.lsp.buf_get_clients(0))
                 if connected then
                     return ' ' .. lspclient.get_lsp_client() .. ' '
                 else
@@ -160,9 +168,21 @@ gls.right = {
                 return string.format(' %s ', vim.bo.filetype)
             end,
             condition = buffer_not_empty,
-            highlight = {cl.fg, cl.bg},
+            separator = sep.right_filled,
+            highlight = 'GalaxyViModeMidInv',
+            separator_highlight = 'GalaxyViModeMid',
+        },
+    }, {
+        FileFormat = {
+            provider = function ()
+                local format = fileinfo.get_file_format()
+                local encode = fileinfo.get_file_encode()
+                return encode .. '[' .. format .. '] '
+            end,
+            condition = buffer_not_empty,
             separator = sep.right,
-            separator_highlight = 'GalaxyViModeInv',
+            highlight = 'GalaxyViModeMidInv',
+            separator_highlight = 'GalaxyViModeMidInv',
         },
     }, {
         PercentInfo = {
@@ -170,14 +190,14 @@ gls.right = {
             highlight = 'GalaxyViMode',
             condition = buffer_not_empty,
             separator = sep.right_filled,
-            separator_highlight = 'GalaxyViModeInv',
+            separator_highlight = 'GalaxyViModeMidInv',
         },
     }, {
         PositionInfo = {
             provider = {
                 function()
                     return string.format(
-                      '%s:%s', vim.fn.line('.'), vim.fn.col('.')
+                    '%s:%s', vim.fn.line('.'), vim.fn.col('.')
                     )
                 end,
             },
