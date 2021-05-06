@@ -210,9 +210,28 @@ gls.right = {
     },
 }
 
-for k, v in pairs(gls.left) do gls.short_line_left[k] = v end
-table.remove(gls.short_line_left, 1)
+table.insert(gls.short_line_right, {
+    FileName = {
+        provider = function()
+            if not buffer_not_empty() then return '' end
+            local fname
+            if wide_enough() then
+                fname = vim.fn.fnamemodify(vim.fn.expand '%', ':~:.')
+            else
+                fname = vim.fn.expand '%:t'
+            end
+            if #fname == 0 then return '' end
+            if vim.bo.readonly then
+                fname = fname .. ' ' .. icons.locker
+            end
+            if vim.bo.modified then
+                fname = fname .. ' ' .. icons.unsaved
+            end
+            return ' ' .. fname .. ' '
+        end,
+        highlight = {cl.fg, cl.bg},
+        separator = sep.right,
+        separator_highlight = 'GalaxyViModeInv',
+    },
+})
 
-for k, v in pairs(gls.right) do gls.short_line_right[k] = v end
-table.remove(gls.short_line_right)
-table.remove(gls.short_line_right)
