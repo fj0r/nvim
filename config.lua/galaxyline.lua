@@ -70,6 +70,24 @@ local function wide_enough()
     return false
 end
 
+local function file_name()
+    if not buffer_not_empty() then return '' end
+    local fname
+    if wide_enough() then
+        fname = vim.fn.fnamemodify(vim.fn.expand '%', ':~:.')
+    else
+        fname = vim.fn.expand '%:t'
+    end
+    if #fname == 0 then return '' end
+    if vim.bo.readonly then
+        fname = fname .. ' ' .. icons.locker
+    end
+    if vim.bo.modified then
+        fname = fname .. ' ' .. icons.unsaved
+    end
+    return ' ' .. fname .. ' '
+end
+
 gl.short_line_list = {'NvimTree', 'vista', 'dbui'}
 
 gls.left = {
@@ -99,23 +117,7 @@ gls.left = {
         },
     }, {
         FileName = {
-            provider = function()
-                if not buffer_not_empty() then return '' end
-                local fname
-                if wide_enough() then
-                    fname = vim.fn.fnamemodify(vim.fn.expand '%', ':~:.')
-                else
-                    fname = vim.fn.expand '%:t'
-                end
-                if #fname == 0 then return '' end
-                if vim.bo.readonly then
-                    fname = fname .. ' ' .. icons.locker
-                end
-                if vim.bo.modified then
-                    fname = fname .. ' ' .. icons.unsaved
-                end
-                return ' ' .. fname .. ' '
-            end,
+            provider = file_name,
             highlight = {cl.fg, cl.bg},
             separator = sep.left,
             condition = condition.hide_in_width,
@@ -212,23 +214,7 @@ gls.right = {
 
 table.insert(gls.short_line_right, {
     FileName = {
-        provider = function()
-            if not buffer_not_empty() then return '' end
-            local fname
-            if wide_enough() then
-                fname = vim.fn.fnamemodify(vim.fn.expand '%', ':~:.')
-            else
-                fname = vim.fn.expand '%:t'
-            end
-            if #fname == 0 then return '' end
-            if vim.bo.readonly then
-                fname = fname .. ' ' .. icons.locker
-            end
-            if vim.bo.modified then
-                fname = fname .. ' ' .. icons.unsaved
-            end
-            return ' ' .. fname .. ' '
-        end,
+        provider = file_name,
         highlight = {cl.fg, cl.bg},
         separator = sep.right,
         separator_highlight = {cl.fg, cl.bg},
