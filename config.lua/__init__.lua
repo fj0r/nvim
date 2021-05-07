@@ -15,4 +15,4 @@ local themes = {
 
 math.randomseed(os.time())
 local random_theme = themes[math.ceil(#themes * math.random())]
-_G.BASE16_THEME = nvim.env.BASE16_THEME or random_theme
+_G.BASE16_THEME = nvim.env.NVIM_THEME or 'gruvbox-dark-hard'

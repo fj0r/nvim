@@ -231,7 +231,7 @@ table.insert(gls.short_line_right, {
         end,
         highlight = {cl.fg, cl.bg},
         separator = sep.right,
-        separator_highlight = 'GalaxyViModeInv',
+        separator_highlight = {cl.fg, cl.bg},
     },
 })
 

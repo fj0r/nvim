@@ -60,35 +60,24 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-"if executable('gcc')
-"  Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension'  }
-"else
-"  Plug 'Yggdroot/LeaderF'
-"endif
-
-if g:nvim_preset != 'core'
-  Plug 'rafcamlet/nvim-luapad'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-endif
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'neovim/nvim-lspconfig'
+"Plug 'kabouzeid/nvim-lspinstall'
+Plug 'nvim-lua/lsp-status.nvim'
+"Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'thaerkh/vim-workspace'
+Plug 'puremourning/vimspector'
 
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
 "Plug 'keith/swift.vim'
 Plug 'ojroques/vim-oscyank'
 
-
+if g:nvim_preset != 'core'
+  Plug 'rafcamlet/nvim-luapad'
+endif
 "Plug 'johngrib/vim-game-snake'
-
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'neovim/nvim-lspconfig'
-"Plug 'kabouzeid/nvim-lspinstall'
-Plug 'thaerkh/vim-workspace'
-Plug 'puremourning/vimspector'
-
-
-Plug 'nvim-lua/lsp-status.nvim'
-"Plug 'nvim-lua/lsp_extensions.nvim'
-
 
 call plug#end()
 
