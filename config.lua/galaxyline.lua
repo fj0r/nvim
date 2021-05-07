@@ -88,7 +88,7 @@ local function file_name()
     return ' ' .. fname .. ' '
 end
 
-gl.short_line_list = {'NvimTree', 'vista', 'dbui'}
+gl.short_line_list = {'NvimTree', 'vista', 'dbui', 'vimspector.Variables', 'vimspector.Watches', 'vimspector.StackTrace', 'vimspector.Console'}
 
 gls.left = {
     {
@@ -111,7 +111,6 @@ gls.left = {
                 return branch and "  " .. vcs.get_git_branch() .. " " or ""
             end,
             separator = sep.left_filled,
-            condition = condition.hide_in_width,
             highlight = 'GalaxyViModeMidInv',
             separator_highlight = 'GalaxyViModeMid',
         },
@@ -120,7 +119,6 @@ gls.left = {
             provider = file_name,
             highlight = {cl.fg, cl.bg},
             separator = sep.left,
-            condition = condition.hide_in_width,
             separator_highlight = 'GalaxyViModeInv',
         },
     },
