@@ -60,14 +60,21 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'GustavoKatel/telescope-asynctasks.nvim'
+Plug 'TC72/telescope-tele-tabby.nvim'
+
+
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
 "Plug 'kabouzeid/nvim-lspinstall'
-Plug 'nvim-lua/lsp-status.nvim'
+"Plug 'nvim-lua/lsp-status.nvim'
 "Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'thaerkh/vim-workspace'
+
 Plug 'puremourning/vimspector'
+"Plug 'mfussenegger/nvim-dap'
+"Plug 'nvim-telescope/telescope-dap.nvim'
 
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
