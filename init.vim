@@ -24,6 +24,10 @@ else
 
     "let &rtp.=','.g:nvim_home.'/config.lua'
     if has('nvim-0.5')
+        for fpath in split(globpath(resolve(expand(g:nvim_home.'/config.lsp')), '*.lua'), '\n')
+            exe 'luafile' fpath
+        endfor
+
         for fpath in split(globpath(resolve(expand(g:nvim_home.'/config.lua')), '*.lua'), '\n')
             exe 'luafile' fpath
         endfor

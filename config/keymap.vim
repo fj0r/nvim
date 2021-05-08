@@ -11,6 +11,8 @@ endif
 
 "go to end of parenthesis/brackets/quotes without switching insert mode
 inoremap <C-e> <C-o>A
+inoremap <C-f> <C-o>l
+inoremap <C-b> <C-o>h
 
 " j k 在屏幕行间上下移动；gj gk 在物理行间上下移动
 "noremap j gj

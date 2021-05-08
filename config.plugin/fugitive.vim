@@ -1,9 +1,9 @@
-command!                                                                Gca  Git commit
-command!                                                                Gcaa Git commit --amend
+command!                                                                Gc   Git commit
+command!                                                                Gca  Git commit --amend
 
-command! -complete=customlist,fugitive#PushComplete                     Gps  Git push
-command! -complete=customlist,fugitive#PushComplete                     Gpsf Git push -f
-command! -complete=customlist,fugitive#PullComplete                     Gpl  Git pull
+command! -complete=customlist,fugitive#PushComplete                     Gp   Git push
+command! -complete=customlist,fugitive#PushComplete                     Gpf  Git push -f
+command! -complete=customlist,fugitive#PullComplete                     Gl   Git pull
 command! -complete=customlist,fugitive#FetchComplete                    Gf   Git fetch
 
 command! -bar -bang -nargs=* -complete=customlist,fugitive#EditComplete Gd   Gvdiffsplit <f-args>

@@ -24,10 +24,9 @@ if &ambiwidth != 'single'
 endif
 
 let g:vimspector_sign_priority = {
-  \    'vimspectorBP':         999,
-  \    'vimspectorBPCond':     999,
-  \    'vimspectorBPDisabled': 999,
-  \    'vimspectorPC':         999,
-  \    'vimspectorPCBP':       999,
-  \ }
-
+            \    'vimspectorBP':         999,
+            \    'vimspectorBPCond':     999,
+            \    'vimspectorBPDisabled': 999,
+            \    'vimspectorPC':         999,
+            \    'vimspectorPCBP':       999,
+            \ }
