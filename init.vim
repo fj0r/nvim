@@ -6,7 +6,7 @@ let g:nvim_preset = exists('$NVIM_PRESET') ? $NVIM_PRESET: 'core'
 let g:nvim_setup_plugins = exists('$NVIM_SETUP_PLUGINS')
 
 if g:nvim_setup_plugins
-    exec 'source' globpath(resolve(expand(g:nvim_home.'/config.plugin')), '__init__.vim')
+    exec 'source' globpath(resolve(expand(g:nvim_home.'/config.plugin')), '__init.vim')
 
 else
     for fpath in split(globpath(resolve(expand(g:nvim_home.'/config')), '*.vim'), '\n')
