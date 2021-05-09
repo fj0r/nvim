@@ -72,9 +72,8 @@ Plug 'neovim/nvim-lspconfig'
 "Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'thaerkh/vim-workspace'
 
-Plug 'puremourning/vimspector'
+"Plug 'puremourning/vimspector'
 Plug 'mfussenegger/nvim-dap'
-Plug 'nvim-telescope/telescope-dap.nvim'
 
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'

@@ -5,11 +5,6 @@ local keymaps = {
     ['<leader>b'] = "<cmd>lua require('telescope').extensions.tele_tabby.list()<cr>",
     ['<leader>h'] = "<cmd>lua require('telescope.builtin').help_tags()<cr>",
     ['<leader>t'] = "<cmd>lua require('telescope').extensions.asynctasks.all()<cr>",
-    ['<leader>xx'] = "<cmd>lua require'telescope'.extensions.dap.commands{}<cr>",
-    ['<leader>xg'] = "<cmd>lua require'telescope'.extensions.dap.configurations{}<cr>",
-    ['<leader>xl'] = "<cmd>lua require'telescope'.extensions.dap.list_breakpoints{}<cr>",
-    ['<leader>xv'] = "<cmd>lua require'telescope'.extensions.dap.variables{}<cr>",
-    ['<leader>xf'] = "<cmd>lua require'telescope'.extensions.dap.frames{}<cr>",
 }
 
 for k, v in pairs(keymaps) do
@@ -42,4 +37,3 @@ require('telescope').setup{
     }
 }
 
-require('telescope').load_extension('dap')
