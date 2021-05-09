@@ -74,6 +74,7 @@ Plug 'thaerkh/vim-workspace'
 
 "Plug 'puremourning/vimspector'
 Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
 
 Plug 'nanotee/sqls.nvim'
 Plug 'chr4/nginx.vim'
