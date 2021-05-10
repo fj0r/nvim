@@ -21,6 +21,8 @@ for _, v in ipairs {'n', 'v'} do
     vim.api.nvim_set_keymap(v, '[v',"<cmd>lua require'dapui'.eval()<cr>", { noremap = true})
 end
 
+vim.g.dap_virtual_text = true
+
 require("dapui").setup({
     icons = {
         expanded = "⯆",
