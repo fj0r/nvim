@@ -122,8 +122,6 @@ dap.adapters.go = function(callback, config)
         callback({type = "server", host = "127.0.0.1", port = port})
     end,
     100)
-
-
     --callback({type = "server", host = "127.0.0.1", port = port})
 end
 -- https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv_dap.md
@@ -137,10 +135,11 @@ dap.configurations.go = {
 }
 
 ------ php
+-- curl 'http://localhost/?XDEBUG_SESSION_START=xdebug'
 dap.adapters.php = {
     type = 'executable',
     command = 'node',
-    args = { '/path/to/vscode-php-debug/out/phpDebug.js' }
+    args = { '/opt/vscode-php-debug/out/phpDebug.js' }
 }
 
 dap.configurations.php = {
@@ -151,3 +150,4 @@ dap.configurations.php = {
         port = 9000
     }
 }
+
