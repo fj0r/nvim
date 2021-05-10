@@ -7,9 +7,9 @@ local on_attach = function (client, bufnr)
     buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
     -- Mappings.
-    buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>')
-    buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>')
-    buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>')
+    buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+    buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+    buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
     buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
     buf_set_keymap('n', '[k', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
     buf_set_keymap('n', '[wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>')
