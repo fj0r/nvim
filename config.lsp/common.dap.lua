@@ -52,7 +52,7 @@ dap.adapters.rust = {
 dap.adapters.haskell = {
   type = 'executable';
   command = 'haskell-debug-adapter';
-  args = {'--hackage-version=0.0.33.0'};
+  args = {'--hackage-version=0.0.34.0'};
 }
 dap.configurations.haskell = {
   {
