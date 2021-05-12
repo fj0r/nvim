@@ -34,6 +34,7 @@ dap.configurations.python = {
 }
 
 ------ rust
+--run docker with `--cap-add=SYS_PTRACE --security-opt seccomp=unconfined` or `--privileged`
 dap.adapters.rust = {
     type = 'executable',
     attach = {
@@ -52,7 +53,14 @@ dap.configurations.rust = {
         name = "Launch",
         type = "rust",
         request = 'launch',
-        program = "${workspaceFolder}/target/debug/${file}"
+        -- program = "${workspaceFolder}/target/debug/${file}"
+        program = function ()
+            local cwd = vim.fn.getcwd()
+            local handle = io.popen("tomlq package.name -f " .. cwd .. '/Cargo.toml')
+            local name = handle:read("*l")
+            handle:close()
+            return "${workspaceFolder}/target/debug/" .. name
+        end
     }
 }
 ------ hs
