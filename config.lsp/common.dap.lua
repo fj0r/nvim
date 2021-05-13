@@ -1,4 +1,5 @@
-local dap = require('dap')
+local dap = require'dap'
+local lspconfig = require'lspconfig'
 
 ------ py
 dap.adapters.python = {
@@ -43,7 +44,7 @@ dap.adapters.rust = {
     },
     command = 'lldb-vscode-11', -- my binary was called 'lldb-vscode-11'
     env = {
-        LLDB_LAUNCH_FLAG_LAUNCH_IN_TTY = "YES"
+        LLDB_LAUNCH_FLAG_LAUNCH_IN_TTY = "YES",
     },
     name = "lldb"
 }
@@ -55,11 +56,15 @@ dap.configurations.rust = {
         request = 'launch',
         -- program = "${workspaceFolder}/target/debug/${file}"
         program = function ()
-            local cwd = vim.fn.getcwd()
+            local r = io.popen("cargo run --quiet")
+            r:read("*a")
+            r:close()
+            --local cwd = lspconfig.util.find_git_ancestor(vim.fn.getcwd())
+            local cwd = lspconfig.util.root_pattern('Cargo.toml')(vim.fn.getcwd())
             local handle = io.popen("tomlq package.name -f " .. cwd .. '/Cargo.toml')
             local name = handle:read("*l")
             handle:close()
-            return "${workspaceFolder}/target/debug/" .. name
+            return cwd .. "/target/debug/" .. name
         end
     }
 }
