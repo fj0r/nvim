@@ -21,9 +21,12 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 't9md/vim-choosewin'
 
-Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'skywind3000/vim-terminal-help'
+Plug 'skywind3000/asynctasks.vim'
+Plug 'GustavoKatel/telescope-asynctasks.nvim'
+
+Plug 'akinsho/nvim-toggleterm.lua'
+"Plug 'skywind3000/vim-terminal-help'
 "Plug 'kassio/neoterm'
 
 "Plug 't9md/vim-smalls'
@@ -60,7 +63,6 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'GustavoKatel/telescope-asynctasks.nvim'
 Plug 'TC72/telescope-tele-tabby.nvim'
 
 
@@ -70,7 +72,9 @@ Plug 'neovim/nvim-lspconfig'
 "Plug 'kabouzeid/nvim-lspinstall'
 "Plug 'nvim-lua/lsp-status.nvim'
 "Plug 'nvim-lua/lsp_extensions.nvim'
-Plug 'thaerkh/vim-workspace'
+
+Plug 'rmagatti/auto-session'
+"Plug 'thaerkh/vim-workspace'
 
 "Plug 'puremourning/vimspector'
 Plug 'mfussenegger/nvim-dap'
