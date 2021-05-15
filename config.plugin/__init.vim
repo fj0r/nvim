@@ -10,13 +10,14 @@ call plug#begin(g:nvim_plugged)
 
 Plug 'norcalli/nvim.lua'
 Plug 'norcalli/nvim-base16.lua'
+"Plug 'rktjmp/lush.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
 
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'ompugao/vim-airline-datetime'
 "Plug 'itchyny/lightline.vim'
 "Plug 'niklaas/lightline-gitdiff'
-"Plug 'mhinz/vim-startify'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 't9md/vim-choosewin'
