@@ -61,6 +61,7 @@ Plug 'TimUntersberger/neogit'
 Plug 'simnalamburt/vim-mundo'
 "Plug 'jceb/vim-orgmode'
 "Plug 'tpope/vim-speeddating'
+Plug 'jbyuki/instant.nvim'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -69,6 +70,7 @@ Plug 'TC72/telescope-tele-tabby.nvim'
 
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
 "Plug 'kabouzeid/nvim-lspinstall'
